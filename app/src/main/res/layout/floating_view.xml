@@ -7,5 +7,7 @@
         android:id="@+id/floating_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_lock" />
+        android:src="@drawable/ic_lock"
+        android:maxWidth="40dp"
+        android:maxHeight="40dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,12 +14,13 @@
         android:theme="@style/Theme.HoverLockApp"
         tools:targetApi="31">
 
-        <service android:name=".FloatingService"
+        <service
+            android:name=".FloatingService"
+            android:enabled="true"
             android:exported="false"
+            android:foregroundServiceType="mediaProjection"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
+            <!-- Intent filter is needed if it's an accessibility service -->
         </service>
 
         <activity
@@ -27,10 +28,8 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

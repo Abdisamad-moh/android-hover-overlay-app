@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">HoverLockApp</string>
+    <string name="app_name">Hover Lock App</string>
+    <string name="channel_name">Service Channel</string>
+    <string name="channel_description">This channel is used for important notifications from the service.</string>
 </resources>
